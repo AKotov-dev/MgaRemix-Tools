@@ -1,0 +1,11 @@
+--- a/src/wm/com.solus-project.budgie.wm.gschema.xml	2020-12-10 20:00:10.754943834 +0300
++++ b/src/wm/com.solus-project.budgie.wm.gschema.xml	2020-12-10 20:52:49.871939476 +0300
+@@ -123,7 +123,7 @@
+ 		</key>
+ 
+ 		<key type="as" name="switch-input-source-backward">
+-			<default><![CDATA[['<Super><Shift>space', '<Shift>XF86Keyboard']]]></default>
++			<default><![CDATA[['<Shift>Alt_L', '<Super><Shift>space', '<Shift>XF86Keyboard']]]></default>
+ 			<summary>Switch to the previous input source</summary>
+ 			<description>Switch to the previous input souce</description>
+ 		</key>

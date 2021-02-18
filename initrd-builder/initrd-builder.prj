@@ -1,0 +1,91 @@
+[NAME]
+name=initrd-builder
+
+[VERSION]
+version=2.1
+
+[RELEASE]
+release=1.mrx8
+
+[GROUP]
+group=Applications/System
+
+[DESCRIPTION]
+0=This package is intended for initrd.gz MgaRemix generation.
+1=After installation, go to the terminal (su/password) and run initrd-builder.
+2=The result is located in the ~/initrd-builder folder. Copy the initrd.gz and vmlinuz
+3=files to the /boot folder on the MgaRemix flash drive.
+4=Additional command that frees up space on the VM disk: /usr/bin/compact
+5=...
+6=More information: /usr/share/doc/package_name/repack.txt
+
+[MAINTAINER]
+maintainer=Alex Kotov
+
+[VENDOR]
+vendor=alex_q_2000 (C) 2020
+
+[SUMMARY]
+summary=MgaRemix initrd builder and compact
+
+[URLCOPY]
+urlcopy=https://cloud.mail.ru/public/59BZ/3Nev2XbrV
+
+[LICENSE]
+license=GPLv3+
+
+[DEPS]
+deps=dracut
+
+[META]
+meta=0
+
+[NOARCH]
+noarch=1
+
+[SIGN]
+sign=0
+
+[FILES]
+0=/usr/bin/compact
+1=/usr/bin/initrd-builder
+2=/usr/share/initrd-builder/
+3=/usr/share/doc/initrd-builder/
+
+[URL32]
+url32=https://cloud.mail.ru/public/59BZ/3Nev2XbrV
+
+[URL64]
+url64=
+
+[PROGRAMNAME]
+programname=initrd-builder
+
+[DEVTOOL]
+devtool=Bash
+
+[TOOLVERSION]
+toolversion=unknown
+
+[INFO]
+0=MgaRemix initrd-builder
+1=---
+2=This package is intended for initrd.gz MgaRemix generation.
+3=
+4=After installation, go to the terminal (su/password) and run initrd-builder.
+5=The result is located in the ~/initrd-builder folder. Copy the initrd.gz and vmlinuz
+6=files to the /boot folder on the MgaRemix flash drive.
+7=
+8=/usr/bin/compact
+9=---
+10=Additional command that frees up space on the VM disk
+11=dd if=/dev/zero of=/zerofile bs=4096 status=progress; rm -f /zerofile
+12=
+13=UPD: 2.1-1
+14=- (aufs) support removed from the kernel and excluded (fuse): /etc/dracut. conf. d/60-live. conf
+15=
+16=UPD: v2.0-1
+17=+ Clearing the history
+18=
+19=UPD: v2.0-0
+20=+ Clearing the swap
