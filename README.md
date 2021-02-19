@@ -29,7 +29,7 @@ MgaRemix is able to work with saving. To do this, it is enough to unpack one of 
 
 Important! In the save mode, you should use fast flash drives with a write speed of 8 MB/sec. The quality of the flash drive in Linux can be checked by the program f3 or KDiskMark.
 
-** Additional recommendations:**
+**Additional recommendations:**
 
 After the installation and final configuration of the guest OS, you can optimize and clean up the system: clean up unnecessary packages and cores using the program 'SCleaner', remove the packages `iptables, msec, shorewall-core, mgaonline, mageiawelcome` so as not to have problems with the connection and not load the system at the first start.
 
@@ -41,7 +41,7 @@ After that, you need to turn off the VM and compress `*.vdi` of the virtual mach
 
 After compressing the file `*.vdi` is sent to the `vdi-to-sqfs-converter`.
 
-** Possible problems:**
+**Possible problems:**
 
 If you previously installed GRUB on the flash drive, you will need to delete all the partitions on it and restore the MBR. On Linux, you can use Gparted. In Windows, you can delete flash drive partitions using ROSA ImageWriter or Image Tool. After deleting the partitions, you will need to reformat (FAT32).
 
