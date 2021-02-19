@@ -1,4 +1,52 @@
-The document is currently being translated...
+Instructions for assembling the MgaRemix flash drive
+---
+
+The entire procedure for assembling a bootable MgaRemix flash drive can be divided into 5 steps:
+
+1. Creating an empty bootable USB flash drive
+2. Installing and configuring Mageia Linux in VirtualBox
+3. Creating special `vmlinuz` and `vmlinuz ' inside the guest OS. initrd.gz` to download from a USB flash drive using the `initrd-builder`script
+4. Convert a VM file to a `*.sqfs` file in the main OS using the `vdi-to-sqfs-converter' converter
+5. Copy the resulting file `distrib-lzma.sqfs` to the `/loopbacks` folder on the flash drive
+
+**Actions on items:**
+
+- Take a flash drive with a FAT32 file system (native FS for flash drives) with a size of 4 GB or more
+- Download the archive `MgaRemix-LiveUSB-Loader-xx.zip` and unzip it to the root of the flash drive. On the flash drive, you should get a directory structure:
+
+>/boot  
+>/EFI  
+>/loopbacks
+
+- Make the flash drive bootable. To do this, run the script `Flash_drive/boot/syslinux/BootInstall.bat` (su/password on Linux or under Administrator on Windows) and press Enter. After installing the bootloader, the label of the flash drive will change to 'MGAREMIX'.
+- Installing Mageia Linux in a Virtual Box is not considered in this manual, since starting to create a flash drive MgaRemix implies that the user knows how to do it. The settings of the virtual system depend only on the imagination of the collector. Disk layout – root + swap.
+- While in the VM, download the package 'initrd-builder-2.1-1. mrxX.noarch` rpm' and install it. We give the command ` 'initrd-builder'. At the end of the operation, the files `~/initrd-buider` will be created in the `~/initrd-buider` directory `initrd.gz` and `vmlinuz`. Connect the previously created bootable flash drive to the VM and copy these files to the `/boot` directory on it. Remove the flash drive (right mouse button – "Extract") and disconnect it from the virtual machine via the VirtualBox menu. Turn off the VM and switch to the main OS.
+- While in the main system, download the file `vdi-to-sqfs-converter.tar.gz`. Go to the terminal (su/password). Unpack the downloaded converter archive and throw a virtual machine file with the extension `*.vdi` into its directory. Run the script `converter.sh` and convert the VM to the `*.sqfs` format. Those working in Windows should keep another virtual machine for converting.
+
+- Transfer the resulting file `distrib-lzma.sqfs` to the flash drive in the directory `/loopbacks`. This completes the creation of the flash drive.
+
+MgaRemix is able to work with saving. To do this, it is enough to unpack one of the archives containing the image of the "save disk" in the size of 1,2,3 or 4GB into the root of the flash drive. You can download it from the `persistence-images` directory.
+
+Important! In the save mode, you should use fast flash drives with a write speed of 8 MB/sec. The quality of the flash drive in Linux can be checked by the program f3 or KDiskMark.
+
+** Additional recommendations:**
+
+After the installation and final configuration of the guest OS, you can optimize and clean up the system: clean up unnecessary packages and cores using the program 'SCleaner', remove the packages `iptables, msec, shorewall-core, mgaonline, mageiawelcome` so as not to have problems with the connection and not load the system at the first start.
+
+To reduce the size of the final `distrib-lzma. sqfs` in the guest OS, you need to run the command from root:
+`dd if=/dev/zero of=/zerofile bs=4096 status=progress; rm -f /zerofile`
+(we ignore the message about the lack of disk space)
+
+After that, you need to turn off the VM and compress `*.vdi` of the virtual machine. On Windows, you can use the `CloneVDI` graphical utility to compress VDI. Before compressing, the "Keep Old UUID" and "Compact drive while copying" checkboxes must be set. To compress `*.vdi` on Linux, use the VDIComp graphical utility.
+
+After compressing the file `*.vdi` is sent to the `vdi-to-sqfs-converter`.
+
+** Possible problems:**
+
+If you previously installed GRUB on the flash drive, you will need to delete all the partitions on it and restore the MBR. On Linux, you can use Gparted. In Windows, you can delete flash drive partitions using ROSA ImageWriter or Image Tool. After deleting the partitions, you will need to reformat (FAT32).
+
+The entire MgaRemix project: https://cloud.mail.ru/public/59BZ/3Nev2XbrV
+
 
 
 Инструкция по cборке флешки MgaRemix
