@@ -44,6 +44,9 @@ The document is currently being translated...
 
 После сжатия файл `*.vdi` отправляется в конвертер `vdi-to-sqfs-converter`.
 
+**Возможные проблемы**
+
+Если ранее на флешку ставился GRUB, потребуется удалить на ней все разделы и восстановить MBR. В Linux можно воспользоваться Gparted. В Windows можно очистить разделы флешки с помощью ROSA ImageWriter или Image Tool. После удаления разделов потребуется переформатирование (FAT32).
 
 Весь проект MgaRemix: https://cloud.mail.ru/public/59BZ/3Nev2XbrV
 
