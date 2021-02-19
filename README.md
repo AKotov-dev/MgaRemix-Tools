@@ -1,7 +1,7 @@
 The document is currently being translated...
 
 
-Инструкция по cборке флешки MgaRemix (Mageia Linux derivative)
+Инструкция по cборке флешки MgaRemix
 ---
 
 Всю процедуру сборки загрузочной флешки MgaRemix можно разделить на 5 шагов:
