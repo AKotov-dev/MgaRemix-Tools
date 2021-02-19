@@ -5,7 +5,7 @@ The entire procedure for assembling a bootable MgaRemix flash drive can be divid
 
 1. Creating an empty bootable USB flash drive
 2. Installing and configuring Mageia Linux in VirtualBox
-3. Creating special `vmlinuz` and `initrd.gz` inside the guest OS to download from a USB flash drive using the `initrd-builder` script
+3. Creating special `vmlinuz` and `initrd.gz` inside the guest OS with using the `initrd-builder` script
 4. Convert a VM file to a `*.sqfs` file in the main OS using the `vdi-to-sqfs-converter' converter
 5. Copy the resulting file `distrib-lzma.sqfs` to the `/loopbacks` folder on the flash drive
 
@@ -56,7 +56,7 @@ The entire MgaRemix project: https://cloud.mail.ru/public/59BZ/3Nev2XbrV
 
 1. Создание пустой загрузочной флешки
 2. Установка и настройка Mageia Linux в VirtualBox
-3. Создание внутри гостевой ОС специальных `vmlinuz` и `initrd.gz` для загрузки с флешки с помощью скрипта `initrd-builder`
+3. Создание внутри гостевой ОС специальных `vmlinuz` и `initrd.gz` с помощью скрипта `initrd-builder`
 4. Конвертирование в основной ОС файла виртуальной машины в файл `*.sqfs` с помощью конвертера `vdi-to-sqfs-converter`
 5. Копирование полученного файла `distrib-lzma.sqfs` в папку `/loopbacks` на флешке
 
