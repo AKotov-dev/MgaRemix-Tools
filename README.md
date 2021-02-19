@@ -4,7 +4,7 @@ The document is currently being translated...
 Инструкция по cборке флешки MgaRemix (Mageia Linux derivative)
 ---
 
-Всю процедуру сборки загрузочной флешки MgaRemix можно разделить на 5 этапов:
+Всю процедуру сборки загрузочной флешки MgaRemix можно разделить на 5 шагов:
 
 1. Создание пустой загрузочной флешки
 2. Установка и настройка Mageia Linux в VirtualBox
