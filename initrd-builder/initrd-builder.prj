@@ -5,7 +5,7 @@ name=initrd-builder
 version=2.1
 
 [RELEASE]
-release=1.mrx8
+release=2.mrx8
 
 [GROUP]
 group=Applications/System
@@ -35,7 +35,7 @@ urlcopy=https://cloud.mail.ru/public/59BZ/3Nev2XbrV
 license=GPLv3+
 
 [DEPS]
-deps=dracut
+deps=dracut binutils
 
 [META]
 meta=0
@@ -81,11 +81,14 @@ toolversion=unknown
 10=Additional command that frees up space on the VM disk
 11=dd if=/dev/zero of=/zerofile bs=4096 status=progress; rm -f /zerofile
 12=
-13=UPD: 2.1-1
-14=- (aufs) support removed from the kernel and excluded (fuse): /etc/dracut. conf. d/60-live. conf
+13=2.1-2
+14=+binutils
 15=
-16=UPD: v2.0-1
-17=+ Clearing the history
+16=2.1-1
+17=- (aufs) support removed from the kernel and excluded (fuse): /etc/dracut. conf. d/60-live. conf
 18=
-19=UPD: v2.0-0
-20=+ Clearing the swap
+19=2.0-1
+20=+ Clearing the history
+21=
+22=2.0-0
+23=+ Clearing the swap
