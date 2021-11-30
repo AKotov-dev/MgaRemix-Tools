@@ -35,7 +35,7 @@ urlcopy=https://github.com/AKotov-dev/MgaRemix-Tools
 license=GPLv3+
 
 [DEPS]
-deps=dracut binutils zstd
+deps=dracut binutils zstd squashfs-tools
 
 [META]
 meta=0
@@ -85,7 +85,7 @@ toolversion=unknown
 11=dd if=/dev/zero of=/zerofile bs=4096 status=progress; rm -f /zerofile
 12=
 13=2.1-4
-14=+zstd dependencies
+14=+zstd and squashfs-tools dependencies
 15=
 16=2.1-3
 17=+/usr/lib/dracut/modules.d/90mgalive:
