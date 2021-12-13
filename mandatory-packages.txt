@@ -3,7 +3,7 @@ pass: ghbdtn	|	pass: ghbdtn
 
 Possible:
 ---
-urpmi --auto aufs-tools squashfs-tools autofs ppp ppp-devel ppp-dhcp ppp-pppoatm ppp-pppoe ppp-radius radiusclient-utils rp-pppoe pptp-linux vpnpptp
+urpmi --auto aufs-tools autofs ppp ppp-devel ppp-dhcp ppp-pppoatm ppp-pppoe ppp-radius radiusclient-utils rp-pppoe pptp-linux vpnpptp
 
 WiFi:
 ---
@@ -11,5 +11,5 @@ urpmi --auto wpa_supplicant wpa_supplicant-gui
 
 Other:
 ---
-urpmi --auto firefox firefox-ru mc htop unrar p7zip htop sudo harddrake chrony gimp viewnior vlc evince libreoffice-calc libreoffice-draw libreoffice-writer libreoffice-langpack-ru draklive-install grub2-efi zstd squashfs-tools
+urpmi --auto firefox firefox-ru mc htop unrar p7zip htop sudo harddrake chrony gimp viewnior vlc evince libreoffice-calc libreoffice-draw libreoffice-writer libreoffice-langpack-ru draklive-install grub2-efi zstd squashfs-tools binutils
 
