@@ -1,6 +1,10 @@
 user: marsik	|	user: root
 pass: ghbdtn	|	pass: ghbdtn
 
+Exclude:
+---
+urpme --auto iptables shorewall-core msec mgaonline mageiawelcome
+
 Possible:
 ---
 urpmi --auto aufs-tools autofs ppp ppp-devel ppp-dhcp ppp-pppoatm ppp-pppoe ppp-radius radiusclient-utils rp-pppoe pptp-linux vpnpptp
