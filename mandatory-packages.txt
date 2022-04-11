@@ -3,7 +3,7 @@ pass: ghbdtn	|	pass: ghbdtn
 
 Exclude:
 ---
-urpme --auto iptables shorewall-core msec mgaonline mageiawelcome
+urpme --auto iptables shorewall-core msec mgaonline mageiawelcome malcontent dasher
 
 Possible:
 ---
