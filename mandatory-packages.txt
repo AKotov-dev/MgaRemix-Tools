@@ -11,4 +11,4 @@ urpmi --auto wpa_supplicant wpa_supplicant-gui vpnpptp
 
 Other:
 ---
-urpmi --auto firefox firefox-ru mc unrar p7zip htop sudo harddrake chrony viewnior vlc evince libreoffice-calc libreoffice-impress libreoffice-writer libreoffice-langpack-ru draklive-install grub2-efi zstd squashfs-tools binutils openssh-server
+urpmi --auto firefox firefox-ru mc unrar p7zip htop sudo harddrake chrony viewnior celluloid evince libreoffice-calc libreoffice-impress libreoffice-writer libreoffice-langpack-ru draklive-install grub2-efi zstd squashfs-tools binutils openssh-server
