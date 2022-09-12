@@ -1,5 +1,6 @@
 Instructions for assembling the MgaRemix flash drive
 ---
+![](MgaRemix-Logo.png)
 
 The entire procedure for assembling a bootable MgaRemix flash drive can be divided into 5 steps:
 
