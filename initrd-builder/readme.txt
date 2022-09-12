@@ -1,4 +1,3 @@
-This package is intended for initrd.gz MgaRemix generation.
 After installation, go to the terminal (su/password) and run initrd-builder.
 The result is located in the ~/initrd-builder folder. Copy the initrd.gz and vmlinuz
 files to the /boot folder on the MgaRemix flash drive.

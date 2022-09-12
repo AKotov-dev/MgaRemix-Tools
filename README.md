@@ -18,9 +18,9 @@ The entire procedure for assembling a bootable MgaRemix flash drive can be divid
 >/EFI  
 >/loopbacks
 
-- Make the flash drive bootable. To do this, run the script `Flash_drive/boot/syslinux/BootInstall.bat` (su/password on Linux or as Administrator on Windows) and press Enter. After installing the bootloader, the label of the flash drive will change to 'MGAREMIX'.
-- Installing Mageia Linux in a Virtual Box is not considered in this manual, since starting to create a flash drive MgaRemix implies that the user knows how to do it. The settings of the virtual system depend only on the imagination of the collector. Disk layout = root + swap.
-- While in the VM, download the package `initrd-builder-x.x-x.mrxX.noarch.rpm` and install it. We give the command `initrd-builder`. At the end of the operation, the files `~/initrd-buider` will be created in the `~/initrd-buider` directory `initrd.gz` and `vmlinuz`. Connect the previously created bootable flash drive to the VM and copy these files to the `/boot` directory on it. Remove the flash drive (right mouse button – "Extract") and disconnect it from the virtual machine via the VirtualBox menu. Turn off the VM and switch to the main OS.
+- Make the flash drive bootable. To do this, run the script `Flash_drive/boot/syslinux/BootInstall.bat` (su/password on Linux or as Administrator on Windows) and press Enter. After installing the bootloader, the label of the flash drive will change to `MGAREMIX`.
+- Installing Mageia Linux in a VirtualBox is not considered in this manual, since starting to create a flash drive MgaRemix implies that the user knows how to do it. The settings of the virtual system depend only on the imagination of the collector. Disk layout = root + swap.
+- While in the VM, download the package [initrd-builder-x.x-x.mrxX.noarch.rpm](https://github.com/AKotov-dev/MgaRemix-Tools/tree/main/initrd-builder) and install it. We give the command `initrd-builder`. At the end of the operation, the files `~/initrd-buider` will be created in the `~/initrd-buider` directory `initrd.gz` and `vmlinuz`. Connect the previously created bootable flash drive to the VM and copy these files to the `/boot` directory on it. Remove the flash drive (right mouse button – `Extract`) and disconnect it from the virtual machine via the VirtualBox menu. Turn off the VM and switch to the main OS.
 - While in the main system, download the file `vdi-to-sqfs-converter.tar.gz`. Go to the terminal (su/password). Unpack the downloaded converter archive and throw a virtual machine file with the extension `*.vdi` into its directory. Run the script `converter.sh` and convert the VM to the `*.sqfs` format. Those working in Windows should keep another virtual machine for converting.
 
 - Transfer the resulting file `distrib.sqfs` to the flash drive in the directory `/loopbacks`. This completes the creation of the flash drive.
@@ -31,7 +31,7 @@ Important! In the save mode, you should use fast flash drives with a write speed
 
 **Additional recommendations:**
 
-After the installation and final configuration of the guest OS, you can optimize and clean up the system: clean up unnecessary packages and cores using the program 'SCleaner', remove the packages `iptables, msec, shorewall-core, mgaonline, mageiawelcome` so as not to have problems with the connection and not load the system at the first start.
+After the installation and final configuration of the guest OS, you can optimize and clean up the system: clean up unnecessary packages and cores using the program [SnappyCleaner](https://github.com/AKotov-dev/SnappyCleaner), remove the packages `iptables, msec, shorewall-core, mgaonline, mageiawelcome` so as not to have problems with the connection and not load the system at the first start.
 
 To reduce the size of the final `distrib.sqfs` in the guest OS, you need to run the command from root: `compact` (we ignore the message about the lack of disk space)
 
@@ -41,7 +41,7 @@ After compressing the file `*.vdi` is sent to the `vdi-to-sqfs-converter`.
 
 **Possible problems:**
 
-If you previously installed GRUB on the flash drive, you will need to delete all the partitions on it and restore the MBR. On Linux, you can use Gparted. In Windows, you can delete flash drive partitions using ROSA ImageWriter or Image Tool. After deleting the partitions, you will need to reformat (FAT32).
+If you previously installed GRUB on the flash drive, you will need to delete all the partitions on it and restore the MBR. On Linux, you can use [USBRestore](https://github.com/AKotov-dev/usbrestore) or Gparted. In Windows, you can delete flash drive partitions using ROSA ImageWriter or Image Tool. After deleting the partitions, you will need to reformat (FAT32).
 
 The entire MgaRemix project: https://cloud.mail.ru/public/59BZ/3Nev2XbrV
 
