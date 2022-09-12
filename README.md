@@ -1,4 +1,4 @@
-Instructions for assembling the MgaRemix flash drive
+EN - Instructions for assembling the MgaRemix flash drive
 ---
 ![](MgaRemix-Logo.png)
 
@@ -47,7 +47,8 @@ If you previously installed GRUB on the flash drive, you will need to delete all
 The entire MgaRemix project: https://cloud.mail.ru/public/59BZ/3Nev2XbrV
   
   
-Инструкция по cборке флешки MgaRemix
+  
+RU - Инструкция по cборке флешки MgaRemix
 ---
 ![](MgaRemix-Logo.png)
 
