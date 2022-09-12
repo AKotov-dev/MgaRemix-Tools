@@ -35,7 +35,7 @@ After the installation and final configuration of the guest OS, you can optimize
 
 To reduce the size of the final `distrib.sqfs` in the guest OS, you need to run the command from root: `compact` (we ignore the message about the lack of disk space)
 
-After that, you need to turn off the VM and compress `*.vdi` of the virtual machine. On Windows, you can use the `CloneVDI` graphical utility to compress VDI. Before compressing, the "Keep Old UUID" and "Compact drive while copying" checkboxes must be set. To compress `*.vdi` on Linux, use the VDIComp graphical utility.
+After that, you need to turn off the VM and compress `*.vdi` of the virtual machine. On Windows, you can use the `CloneVDI` graphical utility to compress VDI. Before compressing, the "Keep Old UUID" and "Compact drive while copying" checkboxes must be set. To compress `*.vdi` on Linux, use the [VDIComp](https://github.com/AKotov-dev/vdicomp) graphical utility.
 
 After compressing the file `*.vdi` is sent to the `vdi-to-sqfs-converter`.
 
@@ -84,7 +84,7 @@ The entire MgaRemix project: https://cloud.mail.ru/public/59BZ/3Nev2XbrV
 
 Для уменьшения размера финального `distrib.sqfs`  в гостевой ОС нужно выполнить от root команду: `compact` (сообщение о нехватке места на диске игнорируем)
 
-После этого нужно выключить виртуальную машину и в основной ОС сжать `*.vdi` виртуальной машины. В Windows для сжатия VDI можно использовать графическую утилиту `CloneVDI`. Перед сжатием галки «Keep Old UUID» и «Compact drive while copying» должны быть установлены. Для сжатия `*.vdi` в Linux используйте графическую утилиту VDIComp.
+После этого нужно выключить виртуальную машину и в основной ОС сжать `*.vdi` виртуальной машины. В Windows для сжатия VDI можно использовать графическую утилиту `CloneVDI`. Перед сжатием галки «Keep Old UUID» и «Compact drive while copying» должны быть установлены. Для сжатия `*.vdi` в Linux используйте графическую утилиту [VDIComp](https://github.com/AKotov-dev/vdicomp).
 
 После сжатия файл `*.vdi` отправляется в конвертер `vdi-to-sqfs-converter`.
 
