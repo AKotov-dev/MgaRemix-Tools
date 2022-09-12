@@ -1,7 +1,7 @@
-![](MgaRemix-Logo.png)
-
 Instructions for assembling the MgaRemix flash drive
 ---
+![](MgaRemix-Logo.png)
+
 The entire procedure for assembling a bootable MgaRemix flash drive can be divided into 5 steps:
 
 1. Creating an empty bootable USB flash drive
@@ -45,11 +45,11 @@ After compressing the file `*.vdi` is sent to the `vdi-to-sqfs-converter`.
 If you previously installed GRUB on the flash drive, you will need to delete all the partitions on it and restore the MBR. On Linux, you can use [USBRestore](https://github.com/AKotov-dev/usbrestore) or Gparted. In Windows, you can delete flash drive partitions using ROSA ImageWriter or Image Tool. After deleting the partitions, you will need to reformat (FAT32).
 
 The entire MgaRemix project: https://cloud.mail.ru/public/59BZ/3Nev2XbrV
-
-
-
+  
+  
 Инструкция по cборке флешки MgaRemix
 ---
+![](MgaRemix-Logo.png)
 
 Всю процедуру сборки загрузочной флешки MgaRemix можно разделить на 5 шагов:
 
