@@ -1,7 +1,7 @@
-Instructions for assembling the MgaRemix flash drive
----
 ![](MgaRemix-Logo.png)
 
+Instructions for assembling the MgaRemix flash drive
+---
 The entire procedure for assembling a bootable MgaRemix flash drive can be divided into 5 steps:
 
 1. Creating an empty bootable USB flash drive
