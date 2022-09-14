@@ -28,7 +28,7 @@ The entire procedure for assembling a bootable MgaRemix flash drive can be divid
 
 MgaRemix is able to work with saving. To do this, it is enough to unpack one of the archives containing the image of the "save disk" in the size of 1,2,3 or 4GB into the root of the flash drive. You can download it from the `persistence-images` directory.
 
-Important! In the save mode, you should use fast flash drives with a write speed from 8MB/sec. The quality of the flash drive in Linux can be checked by the program f3 or KDiskMark.
+Important! In the save mode, you should use fast flash drives with a write speed from 8MB/Sec. The quality of the flash drive in Linux can be checked by the program f3 or KDiskMark.
 
 **Additional recommendations:**
 
