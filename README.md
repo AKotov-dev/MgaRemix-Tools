@@ -12,7 +12,7 @@ The entire procedure for assembling a bootable MgaRemix flash drive can be divid
 
 **Actions on items:**
 
-- Take a flash drive with a FAT32 file system (native FS for flash drives) with a size of 4 GB or more
+- Take a flash drive with a FAT32 file system (native FS for flash drives) with a size from 4GB or more
 - Download the archive `MgaRemix-LiveUSB-Loader-xx.zip` and unzip it to the root of the flash drive. On the flash drive, you should get a directory structure:
 
 >/boot  
@@ -28,7 +28,7 @@ The entire procedure for assembling a bootable MgaRemix flash drive can be divid
 
 MgaRemix is able to work with saving. To do this, it is enough to unpack one of the archives containing the image of the "save disk" in the size of 1,2,3 or 4GB into the root of the flash drive. You can download it from the `persistence-images` directory.
 
-Important! In the save mode, you should use fast flash drives with a write speed of 8 MB/sec. The quality of the flash drive in Linux can be checked by the program f3 or KDiskMark.
+Important! In the save mode, you should use fast flash drives with a write speed from 8MB/sec. The quality of the flash drive in Linux can be checked by the program f3 or KDiskMark.
 
 **Additional recommendations:**
 
@@ -60,7 +60,7 @@ RU - Инструкция по cборке флешки MgaRemix
 
 **Действия по пунктам:**
 
-- Возьмите флешку с файловой системой FAT32 (родная ФС для флешек) размером от 4 ГБ
+- Возьмите флешку с файловой системой FAT32 (родная ФС для флешек) размером от 4ГБ
 - Скачайте архив `MgaRemix-LiveUSB-Loader-xx.zip` и распакуйте его в корень флешки. На флешке должна получиться структура каталогов:
 
 >/boot  
