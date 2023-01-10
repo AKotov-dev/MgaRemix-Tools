@@ -7,7 +7,7 @@ urpme --auto iptables shorewall-core msec mgaonline mageiawelcome malcontent das
 
 WiFi, xl2tpd, pptpd, vpn:
 ---
-urpmi --auto wpa_supplicant wpa_supplicant-gui vpnpptp
+urpmi --auto wpa_supplicant wpa_supplicant-gui vpnpptp spice-vdagent
 
 Other:
 ---
