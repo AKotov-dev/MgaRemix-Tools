@@ -3,7 +3,7 @@ pass: ghbdtn	|	pass: ghbdtn
 
 Exclude:
 ---
-urpme --auto iptables shorewall-core msec mgaonline mageiawelcome malcontent dasher
+urpme --auto iptables shorewall-core msec mgaonline mageiawelcome malcontent dasher (gstreamer1.0-vaapi)
 
 WiFi, xl2tpd, pptpd, vpn:
 ---
