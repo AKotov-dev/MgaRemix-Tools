@@ -11,7 +11,7 @@ urpmi --auto spice-vdagent wpa_supplicant
 
 Other:
 ---
-urpmi --auto firefox firefox-ru mc unrar meld poedit p7zip htop sudo keepassxc harddrake chrony viewnior webp-pixbuf-loader celluloid evince libreoffice-calc libreoffice-impress libreoffice-writer libreoffice-langpack-ru draklive-install grub2-efi zstd squashfs-tools binutils openssh-server gtkhash filezilla keepassxc
+urpmi --auto firefox firefox-ru mc unrar meld poedit p7zip htop sudo harddrake chrony viewnior webp-pixbuf-loader celluloid evince libreoffice-calc libreoffice-impress libreoffice-writer libreoffice-langpack-ru draklive-install grub2-efi zstd squashfs-tools binutils openssh-server gtkhash filezilla keepassxc
 
 Disabling unnecessary services:
 ---
