@@ -6,7 +6,7 @@ Additional command that frees up space on the VM disk: /usr/bin/compact
 More information: /usr/share/doc/package_name/repack.txt
 
 
-Начиная с initrd-builder-v2.3-0 добавлен сервис DrakXbootPatch.service
+Начиная с initrd-builder-v2.3-0 добавлен сервис DrakXbootPatch.service, устраняющий проблему обновления при установке с LiveUSB.
 
 Тема:
 ---
