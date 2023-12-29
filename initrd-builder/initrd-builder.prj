@@ -49,8 +49,14 @@ deb=0
 [FILES]
 0=/usr/bin/compact
 1=/usr/bin/initrd-builder
-2=/usr/share/initrd-builder/
-3=/usr/share/doc/initrd-builder/
+2=/usr/bin/DrakXbootPatch.sh
+3=/etc/systemd/system/DrakXbootPatch.service
+4=/usr/share/initrd-builder/
+5=/usr/share/doc/initrd-builder/
+
+[AFTERINSTALL]
+0=systemctl daemon-reload
+1=systemctl enable DrakXbootPatch
 
 [URL32]
 url32=https://github.com/AKotov-dev/MgaRemix-Tools
