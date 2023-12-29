@@ -5,7 +5,7 @@ name=initrd-builder
 version=2.3
 
 [RELEASE]
-release=1.mrx9
+release=2.mrx9
 
 [GROUP]
 group=Applications/System
@@ -84,7 +84,7 @@ toolversion=unknown
 10=Additional command that frees up space on the VM disk
 11=dd if=/dev/zero of=/zerofile bs=4096 status=progress; rm -f /zerofile
 12=
-13=2.3-1
+13=2.3-2
 14=+ EFI + LUKS (Linux Unified Key Setup) support
 15=+ Generating a unique initrd.gz for a flash drive (system without changes)
 16=+ DrakXbootPatch: /etc/systemd/system/DrakXbootPatch.service (for legacy BIOS installation from flash drive)
