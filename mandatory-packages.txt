@@ -3,7 +3,7 @@ pass: ghbdtn	|	pass: ghbdtn
 
 Exclude:
 ---
-urpmi --auto lib64glesv22 (missing from minimal online installation (for drakconf))
+urpmi --auto lib64glesv22 (missing from minimal online installation M-9 (for drakconf))
 urpme --auto iptables shorewall-core msec mgaonline mageiawelcome malcontent dasher (gstreamer1.0-vaapi)
 
 WiFi, xl2tpd, pptpd, vpn:
