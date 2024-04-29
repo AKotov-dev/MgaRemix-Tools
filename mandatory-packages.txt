@@ -17,7 +17,7 @@ urpmi --auto firefox firefox-ru mc unrar meld poedit p7zip htop sudo harddrake c
 Disabling unnecessary services:
 ---
 systemctl disable mdadm.service; systemctl disable mdmonitor.service; systemctl disable mdmonitor-takeover.service
-urpme --auto openssh-server; rpm -e --nodeps adwaita-icon-theme; urpme --auto gnome-screenshot (for Budgie)
+urpme --auto openssh-server; rpm -e --nodeps adwaita-icon-theme; urpme --auto gnome-screenshot gnome-session (for Budgie >= 10.9.1)
 
 Adding a user to the desired groups:
 ---
