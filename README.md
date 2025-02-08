@@ -44,7 +44,6 @@ After compressing the file `*.vdi` is sent to the `vdi-to-sqfs-converter`.
 
 If you previously installed GRUB on the flash drive, you will need to delete all the partitions on it and restore the MBR. On Linux, you can use [USBRestore](https://github.com/AKotov-dev/usbrestore) or Gparted. In Windows, you can delete flash drive partitions using ROSA ImageWriter or ImageTool. After deleting the partitions, you will need to reformat (FAT32).
 
-The entire MgaRemix project: https://cloud.mail.ru/public/59BZ/3Nev2XbrV
 
 RU - Инструкция по cборке флешки MgaRemix
 ---
@@ -92,5 +91,4 @@ RU - Инструкция по cборке флешки MgaRemix
 
 Если ранее на флешку ставился GRUB, потребуется удалить на ней все разделы и восстановить MBR. В Linux можно воспользоваться [USBRestore](https://github.com/AKotov-dev/usbrestore) или Gparted. В Windows можно удалить разделы флешки с помощью ROSA ImageWriter или ImageTool. После удаления разделов потребуется переформатирование (FAT32).
 
-Весь проект MgaRemix: https://cloud.mail.ru/public/59BZ/3Nev2XbrV
 
