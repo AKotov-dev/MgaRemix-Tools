@@ -1,0 +1,28 @@
+user: marsik	|	user: root
+pass: ghbdtn	|	pass: ghbdtn
+
+Connecting "Tainted Release" and "Tainted Updates" mirrors for chromium-browser, ffmpeg and more:
+---
+urpmq --list-media | grep -i '^Tainted' | grep -viE 'Debug|32bit|Testing|Backports' | while read repo; do urpmi.update --no-ignore "$repo"; done && urpmi.update -a
+
+Include/Exclude:
+---
+urpmi --auto lib64glesv22 (missing from minimal online installation M-9 (for drakconf))
+urpme --auto iptables shorewall-core msec mgaonline mageiawelcome malcontent dasher (gstreamer1.0-vaapi)
+
+WiFi, xl2tpd, pptpd, vpn:
+---
+urpmi --auto spice-vdagent wpa_supplicant
+
+Other:
+---
+urpmi --auto chromium-browser mc unrar meld poedit p7zip htop sudo harddrake chrony viewnior webp-pixbuf-loader celluloid evince libreoffice-calc libreoffice-impress libreoffice-writer libreoffice-langpack-ru draklive-install grub2-efi zstd squashfs-tools binutils openssh-server gtkhash filezilla cryptsetup keepassxc libreswan networkmanager-strongswan-gnome networkmanager-strongswan strongswan-charon-nm strongswan
+
+Disabling unnecessary services:
+---
+systemctl disable mdadm.service; systemctl disable mdmonitor.service; systemctl disable mdmonitor-takeover.service
+urpme --auto openssh-server; rpm -e --nodeps adwaita-icon-theme; urpme --auto gnome-screenshot gnome-session (for Budgie >= 10.9.1)
+
+Adding a user to the desired groups:
+---
+usermod -aG adbusers,usb,scanner,lp,dialout,disk $(logname)
