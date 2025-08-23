@@ -23,12 +23,12 @@ urpmi --auto spice-vdagent wpa_supplicant
 
 Other:
 ---
-urpmi --auto chromium-browser mc unrar meld poedit p7zip htop sudo harddrake chrony viewnior webp-pixbuf-loader celluloid evince libreoffice-calc libreoffice-impress libreoffice-writer libreoffice-langpack-ru draklive-install grub2-efi zstd squashfs-tools binutils openssh-server gtkhash filezilla cryptsetup keepassxc libreswan networkmanager-strongswan-gnome networkmanager-strongswan strongswan-charon-nm strongswan
+urpmi --auto chromium-browser mc unrar meld poedit p7zip htop sudo harddrake chrony viewnior webp-pixbuf-loader celluloid evince libreoffice-calc libreoffice-impress libreoffice-writer libreoffice-langpack-ru draklive-install grub2-efi zstd squashfs-tools binutils openssh-server gtkhash filezilla cryptsetup lib64xcb-util-cursor0 libreswan networkmanager-strongswan-gnome networkmanager-strongswan strongswan-charon-nm strongswan
 
 Disabling unnecessary services:
 ---
 systemctl disable mdadm.service; systemctl disable mdmonitor.service; systemctl disable mdmonitor-takeover.service
-urpme --auto openssh-server; rpm -e --nodeps adwaita-icon-theme; urpme --auto gnome-screenshot gnome-session (for Budgie >= 10.9.1)
+urpme --auto openssh-server; rpm -e --nodeps adwaita-icon-theme; urpme --auto gnome-screenshot gnome-session-bin (for Budgie >= 10.9.1)
 
 Adding a user to the desired groups:
 ---
