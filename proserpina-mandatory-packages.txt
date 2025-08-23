@@ -8,7 +8,7 @@ urpmq --list-media | grep -i '^Tainted' | grep -viE 'Debug|32bit|Testing|Backpor
 Installing the desktop theme and icons
 ---
 urpmi --auto \
-https://github.com/AKotov-dev/budgie-desktop-rpm/raw/refs/heads/main/themes/windows-10-icons-theme-0.2-0.mrx9.noarch.rpm \
+https://github.com/AKotov-dev/budgie-desktop-rpm/raw/refs/heads/main/themes/windows-10-icons-theme-0.3-0.mrx9.noarch.rpm \
 https://github.com/AKotov-dev/budgie-desktop-rpm/raw/refs/heads/main/themes/chromeos-theme-2022.10.29-0.mrx9.noarch.rpm \
 https://github.com/AKotov-dev/budgie-desktop-rpm/raw/refs/heads/main/themes/materia-gtk-theme-0.0.20210322-7.mrx9.noarch.rpm
 
