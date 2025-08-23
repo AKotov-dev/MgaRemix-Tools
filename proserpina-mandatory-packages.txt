@@ -5,12 +5,13 @@ Connecting "Tainted Release" and "Tainted Updates" mirrors for chromium-browser,
 ---
 urpmq --list-media | grep -i '^Tainted' | grep -viE 'Debug|32bit|Testing|Backports' | while read repo; do urpmi.update --no-ignore "$repo"; done && urpmi.update -a
 
-Installing the desktop theme and icons
+Installing the desktop theme and icons (substitute adwaita-icon-theme)
 ---
 urpmi --auto \
 https://github.com/AKotov-dev/budgie-desktop-rpm/raw/refs/heads/main/themes/windows-10-icons-theme-0.3-0.mrx9.noarch.rpm \
 https://github.com/AKotov-dev/budgie-desktop-rpm/raw/refs/heads/main/themes/chromeos-theme-2022.10.29-0.mrx9.noarch.rpm \
-https://github.com/AKotov-dev/budgie-desktop-rpm/raw/refs/heads/main/themes/materia-gtk-theme-0.0.20210322-7.mrx9.noarch.rpm
+https://github.com/AKotov-dev/budgie-desktop-rpm/raw/refs/heads/main/themes/materia-gtk-theme-0.0.20210322-7.mrx9.noarch.rpm \
+https://github.com/AKotov-dev/adwaita-mime-patch/raw/refs/heads/main/adwaita-icon-theme-2000-0.mrx9.noarch.rpm
 
 Include/Exclude:
 ---
