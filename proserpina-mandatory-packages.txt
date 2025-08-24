@@ -29,7 +29,7 @@ urpmi --auto chromium-browser mc unrar meld poedit p7zip htop sudo harddrake chr
 Disabling unnecessary services:
 ---
 systemctl disable mdadm.service; systemctl disable mdmonitor.service; systemctl disable mdmonitor-takeover.service
-urpme --auto openssh-server; rpm -e --nodeps adwaita-icon-theme; urpme --auto gnome-screenshot gnome-session-bin (for Budgie >= 10.9.1)
+urpme --auto openssh-server gnome-screenshot gnome-session-bin (for Budgie >= 10.9.1)
 
 Adding a user to the desired groups:
 ---
