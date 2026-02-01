@@ -16,7 +16,7 @@ https://github.com/AKotov-dev/adwaita-mime-patch/raw/refs/heads/main/adwaita-ico
 Include/Exclude:
 ---
 urpmi --auto lib64glesv22 (missing from minimal online installation M-9 (for drakconf))
-urpme --auto iptables shorewall-core msec mgaonline mageiawelcome malcontent dasher (gstreamer1.0-vaapi)
+urpme --auto iptables shorewall-core msec mgaonline mageiawelcome malcontent dasher flatpak kernel-firmware-nonfree (gstreamer1.0-vaapi)
 
 WiFi, xl2tpd, pptpd, vpn:
 ---
