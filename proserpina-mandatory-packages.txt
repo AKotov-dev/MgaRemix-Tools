@@ -31,6 +31,10 @@ Disabling unnecessary services:
 systemctl mask mdadm.service mdmonitor.service mdmonitor-takeover.service
 urpme --auto openssh-server gnome-screenshot gnome-session-bin (for Budgie >= 10.9.1)
 
+XDG_CURRENT_DESKTOP (Budgie-10.9.4)
+---
+echo 'export $XDG_CURRENT_DESKTOP=Budgie:GNOME' > /etc/profile.d/budgie-gnome.sh
+
 Adding a user to the desired groups:
 ---
 usermod -aG adbusers,usb,scanner,lp,dialout,disk $(logname)
