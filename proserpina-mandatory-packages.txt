@@ -3,7 +3,7 @@ pass: ghbdtn	|	pass: ghbdtn
 
 Connecting "Tainted Release" and "Tainted Updates" mirrors for chromium-browser, ffmpeg and more:
 ---
-urpmq --list-media | grep -i '^Tainted' | grep -viE 'Debug|32bit|Testing|Backports' | while read repo; do urpmi.update --no-ignore "$repo"; done && urpmi.update -a
+# urpmq --list-media | grep -i '^Tainted' | grep -viE 'Debug|32bit|Testing|Backports' | while read repo; do urpmi.update --no-ignore "$repo"; done && urpmi.update -a
 
 Installing the desktop theme and icons (substitute adwaita-icon-theme)
 ---
