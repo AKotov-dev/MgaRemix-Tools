@@ -24,7 +24,7 @@ urpmi --auto spice-vdagent wpa_supplicant
 
 Other:
 ---
-urpmi --auto chromium-browser mc unrar meld poedit p7zip htop sudo harddrake chrony viewnior webp-pixbuf-loader celluloid evince libreoffice-calc libreoffice-impress libreoffice-writer libreoffice-langpack-ru draklive-install grub2-efi zstd squashfs-tools binutils openssh-server gtkhash filezilla cryptsetup lib64xcb-util-cursor0 libreswan networkmanager-strongswan-gnome networkmanager-strongswan strongswan-charon-nm strongswan
+urpmi --auto chromium-browser mc unrar poedit p7zip htop sudo harddrake chrony viewnior webp-pixbuf-loader celluloid evince libreoffice-calc libreoffice-impress libreoffice-writer libreoffice-langpack-ru draklive-install grub2-efi zstd squashfs-tools binutils openssh-server gtkhash putty filezilla cryptsetup lib64xcb-util-cursor0 libreswan networkmanager-strongswan-gnome networkmanager-strongswan strongswan-charon-nm strongswan
 
 Disabling unnecessary services:
 ---
