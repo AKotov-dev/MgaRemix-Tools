@@ -37,7 +37,7 @@ chrome://flags/#enable-quic
 
 XDG_CURRENT_DESKTOP (Budgie-10.9.4)
 ---
-echo 'export XDG_CURRENT_DESKTOP=Budgie:GNOME' > /etc/profile.d/budgie-gnome.sh
+echo 'export XDG_CURRENT_DESKTOP="Budgie:GNOME"' > /etc/profile.d/budgie-gnome.sh
 
 Adding a user to the desired groups:
 ---
