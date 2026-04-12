@@ -36,9 +36,9 @@ Chromium-based browser: Experimental QUIC protocol = Disabled
 ---
 chrome://flags/#enable-quic
 
-XDG_CURRENT_DESKTOP (Budgie-10.9.4)
+XDG_CURRENT_DESKTOP (Budgie-10.9.4) - уже реализовано в rpm
 ---
-echo '[ ${XDG_CURRENT_DESKTOP} = "Budgie" ] && export XDG_CURRENT_DESKTOP="Budgie:GNOME"' > /etc/profile.d/budgie-gnome.sh
+# echo '[ ${XDG_CURRENT_DESKTOP} = "Budgie" ] && export XDG_CURRENT_DESKTOP="Budgie:GNOME"' > /etc/profile.d/budgie-gnome.sh
 
 Adding a user to the desired groups:
 ---
