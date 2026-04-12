@@ -11,7 +11,8 @@ urpmi --auto \
 https://github.com/AKotov-dev/budgie-desktop-rpm/raw/refs/heads/main/themes/windows-10-icons-theme-0.3-0.mrx9.noarch.rpm \
 https://github.com/AKotov-dev/budgie-desktop-rpm/raw/refs/heads/main/themes/chromeos-theme-2022.10.29-0.mrx9.noarch.rpm \
 https://github.com/AKotov-dev/budgie-desktop-rpm/raw/refs/heads/main/themes/materia-gtk-theme-0.0.20210322-7.mrx9.noarch.rpm \
-https://github.com/AKotov-dev/adwaita-mime-patch/raw/refs/heads/main/adwaita-icon-theme-2000-0.mrx9.noarch.rpm
+https://github.com/AKotov-dev/adwaita-mime-patch/raw/refs/heads/main/adwaita-icon-theme-2000-0.mrx9.noarch.rpm; \
+curl -sSL https://raw.githubusercontent.com/AKotov-dev/nemo-xsi-icon-fix/refs/heads/main/nemo-xsi-icon-fix.sh | bash
 
 Include/Exclude:
 ---
