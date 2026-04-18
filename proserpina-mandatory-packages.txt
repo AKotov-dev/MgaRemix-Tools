@@ -43,3 +43,5 @@ XDG_CURRENT_DESKTOP (Budgie-10.9.4) - уже реализовано в rpm
 Adding a user to the desired groups:
 ---
 usermod -aG adbusers,usb,scanner,lp,dialout,disk $(logname)
+
+18.04.26: MgaRemix-10-Proserpina-RU-beta1 - замещение LXDM на LightDM, Удаление /etc/xdg/autostart/net_applet.desktop
