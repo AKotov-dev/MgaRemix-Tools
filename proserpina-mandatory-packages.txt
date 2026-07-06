@@ -29,6 +29,7 @@ urpmi --auto chromium-browser mc unrar poedit p7zip 7zip htop sudo harddrake chr
 
 Disabling unnecessary services:
 ---
+systemctl stop dhcpcd; systemctl disable dhcpcd
 systemctl mask mdadm.service mdmonitor.service mdmonitor-takeover.service
 urpme --auto openssh-server gnome-screenshot gnome-session-bin (for Budgie >= 10.9.1)
 
