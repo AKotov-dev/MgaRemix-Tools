@@ -35,6 +35,9 @@ systemctl stop dhcpcd; systemctl disable dhcpcd
 systemctl mask mdadm.service mdmonitor.service mdmonitor-takeover.service
 urpme --auto openssh-server gnome-screenshot gnome-session-bin (for Budgie >= 10.9.1)
 
+# Cleaning after a possible drakx-net update
+rm -f /etc/xdg/autostart/net_applet*
+
 XDG_CURRENT_DESKTOP (Budgie-10.9.4) - уже реализовано в rpm
 ---
 # echo '[ "${XDG_CURRENT_DESKTOP}" = "Budgie" ] && export XDG_CURRENT_DESKTOP="Budgie:GNOME"' > /etc/profile.d/budgie-gnome.sh
@@ -43,4 +46,3 @@ Adding a user to the desired groups:
 ---
 usermod -aG adbusers,usb,scanner,lp,dialout,disk $(logname)
 
-18.04.26: MgaRemix-10-Proserpina-RU-beta1 - замещение LXDM на LightDM, Удаление /etc/xdg/autostart/net_applet.desktop
