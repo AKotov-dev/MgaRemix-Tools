@@ -17,7 +17,7 @@ curl -sSL https://raw.githubusercontent.com/AKotov-dev/nemo-xsi-icon-fix/refs/he
 Include/Exclude:
 ---
 urpmi --auto lib64glesv22 (missing from minimal online installation M-9 (for drakconf))
-urpme --auto iptables shorewall-core msec mgaonline mageiawelcome malcontent dasher kernel-firmware-nonfree (gstreamer1.0-vaapi)
+urpme --auto iptables shorewall-core msec mgaonline mageiawelcome dasher kernel-firmware-nonfree (gstreamer1.0-vaapi)
 
 WiFi, xl2tpd, pptpd, vpn:
 ---
