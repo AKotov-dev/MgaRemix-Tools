@@ -33,7 +33,8 @@ Disabling unnecessary services:
 ---
 systemctl stop dhcpcd; systemctl disable dhcpcd
 systemctl mask mdadm.service mdmonitor.service mdmonitor-takeover.service
-urpme --auto openssh-server gnome-screenshot gnome-session-bin (for Budgie >= 10.9.1)
+(for Budgie >= 10.9.1)
+urpme --auto openssh-server ibus ibus-ui-gtk3 ibus-dicts-emoji ibus-gtk3 ibus-gtk gnome-session gnome-session-bin gnome-screenshot gnome-user-docs 
 
 # Cleaning after a possible drakx-net update
 rm -f /etc/xdg/autostart/net_applet*
